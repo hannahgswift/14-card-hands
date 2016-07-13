@@ -5,7 +5,7 @@
 // @import 'font-awesome';
 @import 'box-sizing';
 
-$gutter: 1 rem;
+$gutter: 1rem;
 
 body {
   margin: 0;
@@ -16,19 +16,73 @@ ul {
   list-style: none;
 }
 
+figure {
+  margin: 0;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  &__nav {
+    padding: 0 $gutter;
+    width: 100%;
+    background: black;
+    color: white;
+  }
+
+  &__main {
+    padding: 0 $gutter;
+    flex-grow: 1;
+  }
+
+  &__footer {
+    width: 100%;
+    background: black;
+    color: white;
+  }
 }
 
-.app__nav {
-  width: 100%;
-  background: black;
-  color: white;
+.nav-title {
+  // padding: 0 $gutter;
 }
 
 .container {
   max-width: 60rem;
   margin: auto;
+}
+
+.hands-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -$gutter;
+  justify-content: space-between;
+
+  &__item {
+    // flex-grow: 1;
+    min-width: 10rem;
+    width: calc(100% / 5 - #{$gutter} - #{$gutter});
+    margin: $gutter;
+  }
+}
+
+.card {
+  // padding: $gutter / 2;
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+  text-align: center;
+}
+
+.img-container {
+
+}
+
+.img-container__img {
+  width: 100%;
+}
+
+.number {
+  text-align: center;
 }
