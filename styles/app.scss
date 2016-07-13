@@ -16,6 +16,8 @@ ul {
   list-style: none;
 }
 
+
+
 figure {
   margin: 0;
 }
@@ -56,9 +58,9 @@ figure {
 .hands-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin: 0 -$gutter;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   &__item {
     // flex-grow: 1;
