@@ -25,14 +25,14 @@ export default class Hand {
       //   </figure>
       // </li>
       const element = document.createElement('li');
-      element.innerText = card.value;
+      // element.innerText = card.value;
       element.innerHTML = `
       <li class="hands-list__item">
         <figure class="card">
           <div class="img-container">
             <img src="${card.image}" alt="" class="img-container__img">
           </div>
-          <h3 class="number"></h3>
+          <h3 class="number">${card.value}</h3>
         </figure>
       </li>`;
 

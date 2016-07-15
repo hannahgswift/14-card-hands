@@ -12,8 +12,7 @@ export default class App {
       .then((data) => {
         for (let i = 0; i < 5; i++) {
           const newHand = new Hand(data.deck_id);
-          this.appElement.querySelector('.app-container')
-            .appendChild(newHand.element);
+          this.appElement.querySelector('.app-container').appendChild(newHand.element);
 
           newHand.getData().then(() => {
             newHand.render();
