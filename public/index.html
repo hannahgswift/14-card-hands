@@ -7,10 +7,134 @@
 </head>
 <body>
 
+  <div class="app">
+    <nav class="app__nav">
+      <div class="container">
+        <h1 class="nav-title">Card Hands</h1>
+      </div>
+    </nav>
+
+    <div class="app__main">
+      <div class="container app-container">
+        <ul class="hands-list">
+
+
+
+          <!-- <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li>
+
+          <li class="hands-list__item">
+            <figure class="card">
+              <div class="img-container">
+                <img src="http://www.placekitten.com/200/300" alt="" class="img-container__img">
+              </div>
+              <h3 class="number">8</h3>
+            </figure>
+          </li> -->
+
+
+        </ul>
+
+      </div>
+    </div>
+
+    <footer class="app__footer">
+      <div class="container">
+        <h2 class="footer-text">
+          Were we supposed to make a footer?
+        </h2>
+      </div>
+    </footer>
+
+  </div>
+
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
+
   <script type="text/javascript">
+      var appElement = document.querySelector('.app__main');
+      var App = require('app');
+      var appyMcAppFace = new App(appElement);
+      appyMcAppFace.start();
   </script>
 </body>
 </html>
